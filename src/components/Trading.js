@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Web3 from 'web3'; 
 import './Trading.css';
+import './topnav.js';
 
 const ICOComponent = () => {
   const [web3, setWeb3] = useState(null);
@@ -123,16 +124,14 @@ const ICOComponent = () => {
 
   return (
     <div class = "main">
-
-  <div class="topnav">
+      <topnav></topnav>
+      <div class="topnav">
     <a class="active" href="#home">Available campaigns</a>
     <a href="#news">view Tokens</a>
     <a href="#news">Benefits</a>
     <a href="#contact">Contact</a>
     <a href="#about">About</a>
   </div>
-
-      
       <h1>ICO Particiation</h1>
       <button class = "btnW" onClick={loadBlockchainData}>Activate wallet</button><br />
       <input
@@ -140,8 +139,8 @@ const ICOComponent = () => {
         value={amount}
         onChange={(e) => setAmount(e.target.value)}
         placeholder="Enter Ether amount"
-      />
-      <button onClick={participateInICO}>Participate</button>
+      /><br />
+      <button onClick={participateInICO}>Participate</button><br />
       <p>{message}</p>
     </div>
 
