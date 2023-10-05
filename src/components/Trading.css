@@ -52,3 +52,12 @@ p{
     font-size: medium;
     color: red;
 }
+.btnW{
+    margin-bottom: 10px;
+}
+
+input{
+    margin-left: 200px;
+    width: 500px;
+    margin-left: 150px;
+}

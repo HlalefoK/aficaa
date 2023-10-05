@@ -132,8 +132,8 @@ const ICOComponent = () => {
     <a href="#about">About</a>
   </div>
 
-      
-      <h1>ICO Particiation</h1>
+    
+      <h1>Buy Token</h1>
       <button class = "btnW" onClick={loadBlockchainData}>Activate wallet</button><br />
       <input
         type="number"
@@ -141,7 +141,7 @@ const ICOComponent = () => {
         onChange={(e) => setAmount(e.target.value)}
         placeholder="Enter Ether amount"
       />
-      <button onClick={participateInICO}>Participate</button>
+      <button onClick={participateInICO}>Buy Token</button>
       <p>{message}</p>
     </div>
 
